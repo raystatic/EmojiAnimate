@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.Animation.AnimationListener
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mathongo.emojianimate.utils.Direction
 import com.mathongo.emojianimate.utils.Utility
@@ -23,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             emoji_two()
             emoji_three()
       //      emoji_four()
+        }
+
+        bottom_navigation_main.itemIconTintList = null
+        iv_add.setOnClickListener {
+            Toast.makeText(this, "Clicked!", Toast.LENGTH_SHORT).show()
         }
 
     }
